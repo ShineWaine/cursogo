@@ -6,4 +6,6 @@ import (
 
 func main() {
 	variables.NumerosEnteros()
+	variables.RestoVariables()
+
 }
