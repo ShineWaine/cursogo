@@ -7,5 +7,6 @@ import (
 func main() {
 	variables.NumerosEnteros()
 	variables.RestoVariables()
+	variables.Convierteanumero(1780)
 
 }
