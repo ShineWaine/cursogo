@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/ShineWaine/cursogo/ejercicios"
+	"github.com/ShineWaine/cursogo/files"
 )
 
 func main() {
@@ -11,5 +11,8 @@ func main() {
 	entero, frase := ejercicios.Cadenaaentero("500")
 	fmt.Printf("%d, %s", entero, frase)
 	teclado.IngresoNumeros() */
-	ejercicios.Entradanumero()
+	//ejercicios.TablaMultiplicar()
+	//files.GrabaTabla()
+	//files.AnexaTabla()
+	files.LeerDato()
 }
