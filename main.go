@@ -16,5 +16,6 @@ func main() {
 	//files.AnexaTabla()
 	//files.LeerDato()
 	//funciones.Calculos()
-	funciones.LlamarClosure()
+	//funciones.LlamarClosure()
+	funciones.Exponente(1)
 }
