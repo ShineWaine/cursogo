@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/ShineWaine/cursogo/files"
+	"github.com/ShineWaine/cursogo/funciones"
 )
 
 func main() {
@@ -14,5 +14,7 @@ func main() {
 	//ejercicios.TablaMultiplicar()
 	//files.GrabaTabla()
 	//files.AnexaTabla()
-	files.LeerDato()
+	//files.LeerDato()
+	//funciones.Calculos()
+	funciones.LlamarClosure()
 }
