@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/ShineWaine/cursogo/funciones"
+	e "github.com/ShineWaine/cursogo/ejer_interfaces"
+	"github.com/ShineWaine/cursogo/modelos"
 )
 
 func main() {
@@ -17,5 +18,15 @@ func main() {
 	//files.LeerDato()
 	//funciones.Calculos()
 	//funciones.LlamarClosure()
-	funciones.Exponente(1)
+	//funciones.Exponente(1)
+	//arreglos_slices.MuestroArreglos()
+	//arreglos_slices.MuestroSlices()
+	//arreglos_slices.Capacidad()
+	//mapas.MostrarMapas()
+	//users.AltaUsuario()
+	Pedro := new(modelos.Hombre)
+	e.HumanosRespirando(Pedro)
+
+	Maria := new(modelos.Mujer)
+	e.HumanosRespirando(Maria)
 }
