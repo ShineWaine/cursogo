@@ -4,9 +4,13 @@ import (
 	//e "github.com/ShineWaine/cursogo/ejer_interfaces"
 	//"github.com/ShineWaine/cursogo/modelos"
 	//"github.com/ShineWaine/cursogo/defer_panic"
-	"fmt"
 
-	"github.com/ShineWaine/cursogo/goroutines"
+	//"fmt"
+	//"github.com/ShineWaine/cursogo/goroutines"
+
+	//"github.com/ShineWaine/cursogo/webserver"
+
+	"github.com/ShineWaine/cursogo/middleware"
 )
 
 func main() {
@@ -51,32 +55,37 @@ func main() {
 	fmt.Scanln(&x)
 	*/
 
-	//Muestra de control de GOROUTINES con 'channel'
-	// usando 'make', especificando el tipo de dato 'chan' y asociando
-	// otro tipo que será del dato que canal va a controlar. (se puede
-	// usar cualquier tipo de dato, no solo bool)
-	canal1 := make(chan bool)
+	/*
+		//Muestra de control de GOROUTINES con 'channel'
+		// usando 'make', especificando el tipo de dato 'chan' y asociando
+		// otro tipo que será del dato que canal va a controlar. (se puede
+		// usar cualquier tipo de dato, no solo bool)
+		canal1 := make(chan bool)
 
-	fmt.Println("LLamando a la GO-Routina")
-	//llamaremos a la funcion de forma asincrona adjuntando como argumento
-	//un canal de control antes definido.
-	go goroutines.MiNombreConChanel("Pepito Guzmán", canal1)
-	defer func() { <-canal1 }()
-	fmt.Println("Go-Routina en ejecución...")
+		fmt.Println("LLamando a la GO-Routina")
+		//llamaremos a la funcion de forma asincrona adjuntando como argumento
+		//un canal de control antes definido.
+		go goroutines.MiNombreConChanel("Pepito Guzmán", canal1)
+		defer func() { <-canal1 }()
+		fmt.Println("Go-Routina en ejecución...")
 
-	//establecemos un control de flag o cambio de estado de canal1
-	// estado := <- canal1  Si queremos hacer pregunta sobre el estado del flag
-	//usando canal de esta manera, el proceso se clava aqui, en su lugar
-	// si usamos un defer (como ejemplo de arriva), el proceso de este script
-	// continua y cuando acaba, solo finaliza si y solo si la goruotina
-	// ha mandado la señal de final.
+		//establecemos un control de flag o cambio de estado de canal1
+		// estado := <- canal1  Si queremos hacer pregunta sobre el estado del flag
+		//usando canal de esta manera, el proceso se clava aqui, en su lugar
+		// si usamos un defer (como ejemplo de arriva), el proceso de este script
+		// continua y cuando acaba, solo finaliza si y solo si la goruotina
+		// ha mandado la señal de final.
 
-	//<-canal1
+		//<-canal1
 
-	// Podemos usar el control de flag en lugar de dejarlo al final
-	// como colgado, es usar un 'defer'
-	// defer func(){ <- canal1 }()
-	fmt.Println("Señal de Go-ruotina acabada")
-	fmt.Println("Script finalizado")
+		// Podemos usar el control de flag en lugar de dejarlo al final
+		// como colgado, es usar un 'defer'
+		// defer func(){ <- canal1 }()
+		fmt.Println("Señal de Go-ruotina acabada")
+		fmt.Println("Script finalizado")
+	*/
 
+	//webserver.MiWebServer()
+
+	middleware.MiMiddleware()
 }
